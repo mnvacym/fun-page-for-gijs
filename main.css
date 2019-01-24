@@ -122,7 +122,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
-  top: 360px;
+  top: 375px;
 }
 
 .dropbtn {
@@ -203,7 +203,7 @@ i {
 }
 
 img {
-  width: 25rem;
+  width: 33rem;
   border-radius: 1rem;
   opacity: 0.8;
   z-index: -1;
@@ -218,23 +218,23 @@ img {
 
 .right {
   position: absolute;
-  right: 0;
+  right: 10px;
 }
 
 .left {
   position: absolute;
-  left: 0;
+  left: 10px;
 }
 
 .up {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 37%;
 }
 
 .down {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 37%;
 }
 
