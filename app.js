@@ -35,4 +35,4 @@ function getImage(currentImage, b, c, d, option, animation, position) {
 getImage('.astronaut', '.professor', '.dealer', '.crazy', 'select-astronaut', 'shake', 'right');
 getImage('.professor', '.astronaut', '.dealer', '.crazy', 'select-professor', 'rubberBand', 'left');
 getImage('.dealer', '.professor', '.astronaut', '.crazy', 'select-dealer', 'tada', 'up');
-getImage('.crazy', '.dealer', '.professor', '.astronaut', 'select-crazy', 'tada', 'down');
+getImage('.crazy', '.dealer', '.professor', '.astronaut', 'select-crazy', 'lightSpeedIn', 'down');
