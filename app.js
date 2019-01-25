@@ -1,3 +1,8 @@
+document.querySelector('.click-me').addEventListener('click', function() {
+  document.querySelector('.entrance').style.display = 'none';
+  document.querySelector('.fun-part').style.display = 'block';
+});
+
 function showDropdown() {
   document.querySelector('.dropdown-content').classList.toggle('show');
   document.querySelector('.dropdown-content').classList.add('bounceInUp');

@@ -96,6 +96,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: #aaaab3;
   position: relative;
   font-size: 1.2rem;
@@ -112,28 +113,61 @@ body {
 }
 
 .entrance {
-  width: 100%;
+  font-size: 2rem;
+  width: 50%;
+  text-align: justify;
+  line-height: 3rem;
+  font-weight: 100;
+  margin: auto;
+  position: relative;
+  top: 5rem;
   height: 100%;
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
+  /* display: none; */
+}
+
+.click-me {
+  background: #16161e;
+  color: #aaaab3;
+  padding: 1rem 1.75rem 1rem 0.875rem;
+  border: 1px solid;
+  border-radius: 1.5rem;
+  position: relative;
+  top: 3rem;
+}
+
+.click-me:hover {
+  color: #16161e;
+  background: #aaaab3;
+  cursor: pointer;
+}
+
+.fun-part {
+  font-weight: 100;
+  display: none;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
   top: 375px;
+  font-weight: 200;
 }
 
 .dropbtn {
   background: #16161e;
   color: #aaaab3;
   padding: 1rem 1.75rem 1rem 0.875rem;
-  border: 1.5px solid;
+  border: 1px solid;
   border-radius: 1.5rem;
   margin-bottom: 1rem;
-  width: 250px;
-  font-size: 1.2rem;
+  width: 280px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  position: absolute;
+  left: 40%;
 }
 
 .happy {
@@ -145,7 +179,7 @@ body {
 
 i {
   border: solid #aaaab3;
-  border-width: 0 1.5px 1.5px 0;
+  border-width: 0 1.2px 1.2px 0;
   display: inline-block;
   padding: 0.225rem;
   margin: 0 1rem 0.25rem 1rem;
@@ -164,12 +198,15 @@ i {
   display: none;
   position: absolute;
   top: 5rem;
+  left: 40%;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  border: solid 1.5px #aaaab3;
+  border: solid 1px #aaaab3;
   border-radius: 1.5rem;
-  width: 250px;
+  width: 280px;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 .dropdown-content a {
@@ -187,7 +224,7 @@ i {
 
 .dropbtn:hover i {
   border: solid #16161e;
-  border-width: 0 1.5px 1.5px 0;
+  border-width: 0 1.2px 1.2px 0;
 }
 
 .dropbtn:hover {
@@ -197,7 +234,7 @@ i {
 
 .dropdown:hover .dropbtn {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border: 1.5px solid #aaaab3;
+  border: 1px solid #aaaab3;
   border-radius: 1.5rem;
   cursor: pointer;
 }
