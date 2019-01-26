@@ -621,13 +621,15 @@ img {
   .up,
   .left {
     top: 3rem;
-    left: 5rem;
+    left: 3.9rem;
+    width: 33rem;
   }
 
   .right,
   .down {
     bottom: 5rem;
-    left: 4.5rem;
+    left: 3.9rem;
+    width: 33rem;
   }
 
   .logo {
