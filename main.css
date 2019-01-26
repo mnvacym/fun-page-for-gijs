@@ -537,16 +537,16 @@ img {
     width: 185px;
     font-size: 1.8rem;
     position: absolute;
-    bottom: 5rem;
-    left: 11rem;
+    bottom: 7rem;
+    left: 9rem;
   }
 
   .dropdown-content {
     width: 185px;
     font-size: 1.8rem;
     position: absolute;
-    top: -5rem;
-    left: 11rem;
+    top: -7rem;
+    left: 9rem;
   }
 
   .happy {
@@ -574,16 +574,16 @@ img {
 
   .logo {
     position: absolute;
-    top: 10rem;
-    left: 5.2rem;
+    top: 8rem;
+    left: 4rem;
   }
 
   .thank-you {
     font-size: 5rem;
     font-weight: 100;
     position: absolute;
-    top: 50rem;
-    left: 10rem;
+    top: 45rem;
+    left: 8rem;
     width: 25rem;
   }
 }
