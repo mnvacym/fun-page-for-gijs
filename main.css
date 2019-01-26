@@ -463,3 +463,57 @@ img {
 .lightSpeedIn {
   animation: lightSpeedIn 1s ease;
 }
+
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 0.55rem;
+  }
+
+  .entrance {
+    width: 80%;
+  }
+
+  .fun-part {
+    width: 90%;
+  }
+
+  .dropbtn {
+    width: 185px;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 8rem;
+  }
+
+  .dropdown-content {
+    width: 185px;
+    font-size: 1.8rem;
+    position: absolute;
+    top: -5rem;
+    left: 8rem;
+  }
+
+  .happy {
+    font-size: 1.8rem;
+  }
+
+  .up,
+  .left {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+  }
+
+  .right,
+  .down {
+    position: absolute;
+    bottom: 2rem;
+    left: 15px;
+  }
+}

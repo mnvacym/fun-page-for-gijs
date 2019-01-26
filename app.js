@@ -1,3 +1,5 @@
+'use strict';
+
 document.querySelector('.click-me').addEventListener('click', function() {
   document.querySelector('.entrance').style.display = 'none';
   document.querySelector('.fun-part').style.display = 'block';
