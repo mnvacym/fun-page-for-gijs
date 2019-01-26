@@ -249,8 +249,25 @@ img {
 .astronaut,
 .professor,
 .dealer,
-.crazy {
+.crazy,
+.logo,
+.thank-you {
   display: none;
+}
+
+.logo {
+  position: absolute;
+  top: 3rem;
+  left: 30%;
+}
+
+.thank-you {
+  font-size: 3rem;
+  font-weight: 100;
+  width: 300px;
+  position: absolute;
+  top: 40rem;
+  left: 39%;
 }
 
 .right {
@@ -436,32 +453,65 @@ img {
   animation: shake 1s ease;
 }
 
-@keyframes lightSpeedIn {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-  }
-
+@keyframes jello {
+  from,
+  11.1%,
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
 }
 
-.lightSpeedIn {
-  animation: lightSpeedIn 1s ease;
+.jello {
+  animation: jello 2s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+.fade-in {
+  animation: fade-in 3s ease;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -488,7 +538,7 @@ img {
     font-size: 1.8rem;
     position: absolute;
     bottom: 5rem;
-    left: 8rem;
+    left: 11rem;
   }
 
   .dropdown-content {
@@ -496,7 +546,7 @@ img {
     font-size: 1.8rem;
     position: absolute;
     top: -5rem;
-    left: 8rem;
+    left: 11rem;
   }
 
   .happy {
@@ -506,14 +556,34 @@ img {
   .up,
   .left {
     position: absolute;
-    top: 10px;
-    left: 15px;
+    top: 3rem;
+    left: 5rem;
   }
 
   .right,
   .down {
     position: absolute;
-    bottom: 2rem;
-    left: 15px;
+    bottom: 5rem;
+    left: 4.5rem;
+  }
+
+  .astronaut {
+    position: relative;
+    top: 1rem;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10rem;
+    left: 5.2rem;
+  }
+
+  .thank-you {
+    font-size: 5rem;
+    font-weight: 100;
+    position: absolute;
+    top: 50rem;
+    left: 10rem;
+    width: 25rem;
   }
 }
