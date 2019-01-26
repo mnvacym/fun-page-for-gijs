@@ -518,9 +518,6 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
-}
-
-@media only screen and (max-width: 375px) {
   html {
     font-size: 0.55rem;
   }
@@ -534,19 +531,19 @@ img {
   }
 
   .dropbtn {
-    width: 185px;
+    width: 190px;
     font-size: 1.8rem;
     position: absolute;
-    bottom: 7rem;
-    left: 9rem;
+    bottom: 3rem;
+    left: 13rem;
   }
 
   .dropdown-content {
-    width: 185px;
+    width: 190px;
     font-size: 1.8rem;
     position: absolute;
-    top: -7rem;
-    left: 9rem;
+    top: -3rem;
+    left: 13rem;
   }
 
   .happy {
@@ -555,27 +552,27 @@ img {
 
   .up,
   .left {
-    position: absolute;
-    top: 3rem;
-    left: 5rem;
+    top: 5rem;
+    left: 3rem;
+    width: 40rem;
   }
 
   .right,
   .down {
-    position: absolute;
     bottom: 5rem;
-    left: 4.5rem;
+    left: 3rem;
+    width: 40rem;
   }
 
   .astronaut {
     position: relative;
-    top: 1rem;
+    top: 3rem;
   }
 
   .logo {
     position: absolute;
     top: 8rem;
-    left: 4rem;
+    left: 7rem;
   }
 
   .thank-you {
@@ -583,7 +580,61 @@ img {
     font-weight: 100;
     position: absolute;
     top: 45rem;
-    left: 8rem;
+    left: 11rem;
     width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  /* html {
+    font-size: 0.55rem;
+  }
+
+  .entrance {
+    width: 80%;
+  }
+
+  .fun-part {
+    width: 90%;
+  } */
+
+  .dropbtn {
+    /* width: 185px;
+    font-size: 1.8rem;
+    position: absolute; */
+    bottom: 7rem;
+    left: 9rem;
+  }
+
+  .dropdown-content {
+    /* width: 185px;
+    font-size: 1.8rem;
+    position: absolute; */
+    top: -7rem;
+    left: 9rem;
+  }
+
+  /* .happy {
+    font-size: 1.8rem;
+  } */
+
+  .up,
+  .left {
+    top: 3rem;
+    left: 5rem;
+  }
+
+  .right,
+  .down {
+    bottom: 5rem;
+    left: 4.5rem;
+  }
+
+  .logo {
+    left: 4rem;
+  }
+
+  .thank-you {
+    left: 8rem;
   }
 }
