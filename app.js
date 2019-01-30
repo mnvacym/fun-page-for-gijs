@@ -42,7 +42,7 @@ function getImage(currentImage, b, c, d, e, option, animation, position) {
 }
 getImage(
   '.astronaut',
-  '.professor',
+  '.captain',
   '.dealer',
   '.crazy',
   '.logo',
@@ -51,7 +51,7 @@ getImage(
   'right'
 );
 getImage(
-  '.professor',
+  '.captain',
   '.astronaut',
   '.dealer',
   '.crazy',
@@ -60,10 +60,10 @@ getImage(
   'rubberBand',
   'left'
 );
-getImage('.dealer', '.professor', '.astronaut', '.crazy', '.logo', 'select-dealer', 'tada', 'up');
-getImage('.crazy', '.dealer', '.professor', '.astronaut', '.logo', 'select-crazy', 'jello', 'down');
-getImage('.logo', '.dealer', '.professor', '.astronaut', '.crazy', 'end', 'fade-in');
-getImage('.thank-you', '.dealer', '.professor', '.astronaut', '.crazy', 'end', 'fade-in');
+getImage('.dealer', '.captain', '.astronaut', '.crazy', '.logo', 'select-dealer', 'tada', 'up');
+getImage('.crazy', '.dealer', '.captain', '.astronaut', '.logo', 'select-crazy', 'jello', 'down');
+getImage('.logo', '.dealer', '.captain', '.astronaut', '.crazy', 'end', 'fade-in');
+getImage('.thank-you', '.dealer', '.captain', '.astronaut', '.crazy', 'end', 'fade-in');
 document.getElementById('end').addEventListener('click', function() {
   document.querySelector('.dropdown').classList.add('hide');
 });

@@ -247,7 +247,7 @@ img {
 }
 
 .astronaut,
-.professor,
+.captain,
 .dealer,
 .crazy,
 .logo,
@@ -268,6 +268,10 @@ img {
   position: absolute;
   top: 40rem;
   left: 39%;
+}
+
+#utku-ammar {
+  font-size: 1.1rem;
 }
 
 .right {
