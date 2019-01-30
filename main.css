@@ -272,6 +272,8 @@ img {
 
 #utku-ammar {
   font-size: 1.1rem;
+  position: relative;
+  left: 1%;
 }
 
 .right {
@@ -583,6 +585,10 @@ img {
     top: 45rem;
     left: 12rem;
     width: 25rem;
+  }
+
+  #utku-ammar {
+    left: 20%;
   }
 }
 
