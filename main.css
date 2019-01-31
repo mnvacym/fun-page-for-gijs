@@ -267,16 +267,16 @@ img {
 .thank-you {
   font-size: 3rem;
   font-weight: 100;
-  width: 300px;
+  width: 340px;
   position: absolute;
   top: 40rem;
-  left: 39%;
+  left: 37%;
 }
 
 #utku-ammar {
   font-size: 1.1rem;
   position: relative;
-  left: 1%;
+  left: 11%;
 }
 
 .position {
@@ -603,20 +603,20 @@ img {
   .logo {
     position: absolute;
     top: 8rem;
-    left: 6rem;
+    left: 8rem;
   }
 
   .thank-you {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 100;
     position: absolute;
     top: 45rem;
-    left: 10rem;
-    width: 25rem;
+    left: 11rem;
+    width: 29rem;
   }
 
   #utku-ammar {
-    left: 20%;
+    font-size: 1.5rem;
   }
 }
 
