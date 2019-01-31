@@ -536,7 +536,7 @@ img {
 }
 
 .heart-beat {
-  animation: heartBeat 1.3s ease;
+  animation: heartBeat 2s ease;
 }
 
 @keyframes zoomInDown {
@@ -568,7 +568,6 @@ img {
 
   .entrance {
     width: 80%;
-    left: -1.3rem;
   }
 
   .fun-part {
@@ -597,7 +596,7 @@ img {
 
   .position {
     top: 22rem;
-    left: 2.5rem;
+    left: 3.9rem;
     width: 40rem;
   }
 
@@ -626,10 +625,6 @@ img {
     font-size: 0.7rem;
   }
 
-  .entrance {
-    left: -1rem;
-  }
-
   .dropbtn {
     position: absolute;
     width: 280px;
@@ -646,7 +641,7 @@ img {
   .position {
     top: 20rem;
     width: 32rem;
-    left: 1.5rem;
+    left: 2.3rem;
   }
 
   .logo {
@@ -668,7 +663,7 @@ img {
     font-size: 1.8rem;
     position: absolute;
     top: 1rem;
-    left: 6rem;
+    left: 7rem;
   }
 
   .dropdown-content {
@@ -676,20 +671,20 @@ img {
     font-size: 1.8rem;
     position: absolute;
     top: 7rem;
-    left: 6rem;
+    left: 7rem;
   }
 
   .position {
     top: 18rem;
-    left: 2.7rem;
+    left: 3.7rem;
     width: 33rem;
   }
 
   .logo {
-    left: 2.7rem;
+    left: 4rem;
   }
 
   .thank-you {
-    left: 6.5rem;
+    left: 8rem;
   }
 }
