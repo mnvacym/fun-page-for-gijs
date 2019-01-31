@@ -27,13 +27,15 @@ window.onclick = function hideTheDropdown(event) {
   }
 };
 
-function getImage(currentImage, b, c, d, e, option, animation, position) {
+function getImage(currentImage, b, c, d, e, f, g, option, animation, position) {
   function showImage(image) {
     document.querySelector(currentImage).classList.add('show');
     document.querySelector(b).classList.remove('show');
     document.querySelector(c).classList.remove('show');
     document.querySelector(d).classList.remove('show');
     document.querySelector(e).classList.remove('show');
+    document.querySelector(f).classList.remove('show');
+    document.querySelector(g).classList.remove('show');
     image.preventDefault();
     document.querySelector(currentImage).classList.add(animation);
     document.querySelector(currentImage).classList.add(position);
@@ -41,29 +43,99 @@ function getImage(currentImage, b, c, d, e, option, animation, position) {
   document.getElementById(option).addEventListener('click', showImage);
 }
 getImage(
-  '.astronaut',
+  '.pusher',
   '.captain',
-  '.dealer',
-  '.crazy',
+  '.keeper',
+  '.que',
+  '.auditor',
+  '.engineer',
   '.logo',
-  'select-astronaut',
+  'select-pusher',
   'shake',
-  'right'
+  'position'
 );
 getImage(
   '.captain',
-  '.astronaut',
-  '.dealer',
-  '.crazy',
+  '.pusher',
+  '.keeper',
+  '.que',
+  '.auditor',
+  '.engineer',
   '.logo',
-  'select-professor',
+  'select-captain',
   'rubberBand',
-  'left'
+  'position'
 );
-getImage('.dealer', '.captain', '.astronaut', '.crazy', '.logo', 'select-dealer', 'tada', 'up');
-getImage('.crazy', '.dealer', '.captain', '.astronaut', '.logo', 'select-crazy', 'jello', 'down');
-getImage('.logo', '.dealer', '.captain', '.astronaut', '.crazy', 'end', 'fade-in');
-getImage('.thank-you', '.dealer', '.captain', '.astronaut', '.crazy', 'end', 'fade-in');
+getImage(
+  '.keeper',
+  '.captain',
+  '.pusher',
+  '.que',
+  '.auditor',
+  '.engineer',
+  '.logo',
+  'select-keeper',
+  'tada',
+  'position'
+);
+getImage(
+  '.que',
+  '.keeper',
+  '.captain',
+  '.pusher',
+  '.auditor',
+  '.engineer',
+  '.logo',
+  'select-que',
+  'jello',
+  'position'
+);
+getImage(
+  '.auditor',
+  '.keeper',
+  '.captain',
+  '.pusher',
+  '.que',
+  '.engineer',
+  '.logo',
+  'select-auditor',
+  'heart-beat',
+  'position'
+);
+getImage(
+  '.engineer',
+  '.keeper',
+  '.captain',
+  '.pusher',
+  '.que',
+  '.auditor',
+  '.logo',
+  'select-engineer',
+  'zoomInDown',
+  'position'
+);
+getImage(
+  '.logo',
+  '.keeper',
+  '.captain',
+  '.pusher',
+  '.que',
+  '.auditor',
+  '.engineer',
+  'end',
+  'fade-in'
+);
+getImage(
+  '.thank-you',
+  '.keeper',
+  '.captain',
+  '.pusher',
+  '.que',
+  '.auditor',
+  '.engineer',
+  'end',
+  'fade-in'
+);
 document.getElementById('end').addEventListener('click', function() {
   document.querySelector('.dropdown').classList.add('hide');
 });

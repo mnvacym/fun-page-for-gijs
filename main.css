@@ -152,18 +152,18 @@ body {
 
 .dropdown {
   position: relative;
-  top: 375px;
+  top: 3rem;
   font-weight: 200;
 }
 
 .dropbtn {
   background: #16161e;
   color: #aaaab3;
-  padding: 1rem 1.75rem 1rem 0.875rem;
+  padding: 1rem 1.75rem 1rem 1.5rem;
   border: 1px solid;
   border-radius: 1.5rem;
   margin-bottom: 1rem;
-  width: 280px;
+  width: 320px;
   font-size: 1.5rem;
   font-weight: 200;
   position: absolute;
@@ -173,7 +173,7 @@ body {
 .happy {
   position: relative;
   top: 0.3rem;
-  left: 20px;
+  left: 50px;
   font-size: 1.5rem;
 }
 
@@ -189,7 +189,7 @@ i {
 
 .arrow {
   position: relative;
-  left: 30px;
+  left: 70px;
   transform: rotate(45deg);
   transition: transform 0.5s;
 }
@@ -197,14 +197,14 @@ i {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 5rem;
+  top: 4.5rem;
   left: 40%;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border: solid 1px #aaaab3;
   border-radius: 1.5rem;
-  width: 280px;
+  width: 320px;
   font-size: 1.5rem;
   font-weight: 200;
 }
@@ -240,22 +240,25 @@ i {
 }
 
 img {
-  width: 33rem;
+  width: 55rem;
   border-radius: 1rem;
   opacity: 0.8;
   z-index: -1;
 }
 
-.astronaut,
+.pusher,
 .captain,
-.dealer,
-.crazy,
+.keeper,
+.que,
+.auditor,
+.engineer,
 .logo,
 .thank-you {
   display: none;
 }
 
 .logo {
+  width: 33rem;
   position: absolute;
   top: 3rem;
   left: 30%;
@@ -276,26 +279,11 @@ img {
   left: 1%;
 }
 
-.right {
+.position {
   position: absolute;
-  right: 10px;
-}
-
-.left {
-  position: absolute;
-  left: 10px;
-}
-
-.up {
-  position: absolute;
-  top: 10px;
-  left: 37%;
-}
-
-.down {
-  position: absolute;
-  bottom: 10px;
-  left: 37%;
+  left: 21%;
+  top: 18%;
+  z-index: -3;
 }
 
 .transform-arrow {
@@ -520,6 +508,59 @@ img {
   animation: fade-in 3s ease;
 }
 
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.heart-beat {
+  animation: heartBeat 1.3s ease;
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.zoomInDown {
+  animation: zoomInDown 1s ease;
+}
+
 @media only screen and (max-width: 1000px) {
   html {
     font-size: 1rem;
@@ -527,6 +568,7 @@ img {
 
   .entrance {
     width: 80%;
+    left: -1.3rem;
   }
 
   .fun-part {
@@ -534,48 +576,35 @@ img {
   }
 
   .dropbtn {
-    width: 320px;
+    width: 370px;
     font-size: 1.8rem;
     position: absolute;
     top: 3rem;
-    left: 14rem;
+    left: 12rem;
   }
 
   .dropdown-content {
-    width: 320px;
+    width: 370px;
     font-size: 1.8rem;
     position: absolute;
     top: 8rem;
-    left: 14rem;
+    left: 12rem;
   }
 
   .happy {
     font-size: 1.8rem;
   }
 
-  .up,
-  .left {
-    top: 2rem;
-    left: 3.8rem;
+  .position {
+    top: 22rem;
+    left: 2.5rem;
     width: 40rem;
-  }
-
-  .right,
-  .down {
-    bottom: 5rem;
-    left: 3.8rem;
-    width: 40rem;
-  }
-
-  .astronaut {
-    position: relative;
-    top: 2rem;
   }
 
   .logo {
     position: absolute;
     top: 8rem;
-    left: 8rem;
+    left: 6rem;
   }
 
   .thank-you {
@@ -583,7 +612,7 @@ img {
     font-weight: 100;
     position: absolute;
     top: 45rem;
-    left: 12rem;
+    left: 10rem;
     width: 25rem;
   }
 
@@ -597,33 +626,27 @@ img {
     font-size: 0.7rem;
   }
 
+  .entrance {
+    left: -1rem;
+  }
+
   .dropbtn {
     position: absolute;
-    width: 230px;
-    top: -9rem;
-    left: 8rem;
+    width: 280px;
+    top: 1rem;
+    left: 5rem;
   }
 
   .dropdown-content {
-    width: 230px;
-    top: -3rem;
-    left: 8rem;
+    width: 280px;
+    top: 6rem;
+    left: 5rem;
   }
 
-  .up,
-  .left {
+  .position {
+    top: 20rem;
     width: 32rem;
-    left: 2.5rem;
-  }
-
-  .right,
-  .down {
-    width: 32rem;
-    left: 2.5rem;
-  }
-
-  .astronaut {
-    top: 3rem;
+    left: 1.5rem;
   }
 
   .logo {
@@ -641,40 +664,32 @@ img {
   }
 
   .dropbtn {
-    width: 190px;
+    width: 240px;
     font-size: 1.8rem;
     position: absolute;
-    top: -13rem;
-    left: 10rem;
+    top: 1rem;
+    left: 6rem;
   }
 
   .dropdown-content {
-    width: 190px;
+    width: 240px;
     font-size: 1.8rem;
     position: absolute;
-    top: -7rem;
-    left: 10rem;
+    top: 7rem;
+    left: 6rem;
   }
 
-  .up,
-  .left {
-    top: 3rem;
-    left: 3.9rem;
-    width: 33rem;
-  }
-
-  .right,
-  .down {
-    bottom: 5rem;
-    left: 3.9rem;
+  .position {
+    top: 18rem;
+    left: 2.7rem;
     width: 33rem;
   }
 
   .logo {
-    left: 4rem;
+    left: 2.7rem;
   }
 
   .thank-you {
-    left: 8rem;
+    left: 6.5rem;
   }
 }
