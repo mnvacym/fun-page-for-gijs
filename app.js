@@ -27,7 +27,7 @@ window.onclick = function hideTheDropdown(event) {
   }
 };
 
-function getImage(currentImage, b, c, d, e, f, g, option, animation, position) {
+function getImage(currentImage, b, c, d, e, f, g, h, option, animation, position) {
   function showImage(image) {
     document.querySelector(currentImage).classList.add('show');
     document.querySelector(b).classList.remove('show');
@@ -36,6 +36,7 @@ function getImage(currentImage, b, c, d, e, f, g, option, animation, position) {
     document.querySelector(e).classList.remove('show');
     document.querySelector(f).classList.remove('show');
     document.querySelector(g).classList.remove('show');
+    document.querySelector(h).classList.remove('show');
     image.preventDefault();
     document.querySelector(currentImage).classList.add(animation);
     document.querySelector(currentImage).classList.add(position);
@@ -46,9 +47,10 @@ getImage(
   '.pusher',
   '.captain',
   '.keeper',
-  '.que',
+  '.queue',
   '.auditor',
   '.engineer',
+  '.bonus',
   '.logo',
   'select-pusher',
   'shake',
@@ -58,9 +60,10 @@ getImage(
   '.captain',
   '.pusher',
   '.keeper',
-  '.que',
+  '.queue',
   '.auditor',
   '.engineer',
+  '.bonus',
   '.logo',
   'select-captain',
   'rubberBand',
@@ -70,23 +73,25 @@ getImage(
   '.keeper',
   '.captain',
   '.pusher',
-  '.que',
+  '.queue',
   '.auditor',
   '.engineer',
+  '.bonus',
   '.logo',
   'select-keeper',
   'tada',
   'position'
 );
 getImage(
-  '.que',
+  '.queue',
   '.keeper',
   '.captain',
   '.pusher',
   '.auditor',
   '.engineer',
+  '.bonus',
   '.logo',
-  'select-que',
+  'select-queue',
   'jello',
   'position'
 );
@@ -95,8 +100,9 @@ getImage(
   '.keeper',
   '.captain',
   '.pusher',
-  '.que',
+  '.queue',
   '.engineer',
+  '.bonus',
   '.logo',
   'select-auditor',
   'heart-beat',
@@ -107,11 +113,26 @@ getImage(
   '.keeper',
   '.captain',
   '.pusher',
-  '.que',
+  '.queue',
   '.auditor',
+  '.bonus',
   '.logo',
   'select-engineer',
   'zoomInDown',
+  'position'
+);
+
+getImage(
+  '.bonus',
+  '.keeper',
+  '.captain',
+  '.pusher',
+  '.queue',
+  '.auditor',
+  '.engineer',
+  '.logo',
+  'select-bonus',
+  'rotateIn',
   'position'
 );
 getImage(
@@ -119,9 +140,10 @@ getImage(
   '.keeper',
   '.captain',
   '.pusher',
-  '.que',
+  '.queue',
   '.auditor',
   '.engineer',
+  '.bonus',
   'end',
   'fade-in'
 );
@@ -130,9 +152,10 @@ getImage(
   '.keeper',
   '.captain',
   '.pusher',
-  '.que',
+  '.queue',
   '.auditor',
   '.engineer',
+  '.bonus',
   'end',
   'fade-in'
 );

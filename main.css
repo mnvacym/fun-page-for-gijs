@@ -195,6 +195,7 @@ i {
 }
 
 .dropdown-content {
+  background: #16161e;
   display: none;
   position: absolute;
   top: 4.5rem;
@@ -244,14 +245,16 @@ img {
   border-radius: 1rem;
   opacity: 0.8;
   z-index: -1;
+  position: relative;
 }
 
 .pusher,
 .captain,
 .keeper,
-.que,
+.queue,
 .auditor,
 .engineer,
+.bonus,
 .logo,
 .thank-you {
   display: none;
@@ -285,6 +288,11 @@ img {
   left: 21%;
   top: 18%;
   z-index: -3;
+}
+
+.bonus {
+  width: 27rem;
+  left: 35%;
 }
 
 .transform-arrow {
@@ -562,6 +570,28 @@ img {
   animation: zoomInDown 1s ease;
 }
 
+@keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.rotateIn {
+  animation: rotateIn 1s ease;
+}
+
 @media only screen and (max-width: 1000px) {
   html {
     font-size: 1rem;
@@ -599,6 +629,10 @@ img {
     top: 22rem;
     left: 3.9rem;
     width: 40rem;
+  }
+
+  .bonus {
+    top: 14rem;
   }
 
   .logo {
@@ -645,6 +679,10 @@ img {
     left: 2.3rem;
   }
 
+  .bonus {
+    top: 14rem;
+  }
+
   .logo {
     left: 2rem;
   }
@@ -679,6 +717,10 @@ img {
     top: 18rem;
     left: 3.7rem;
     width: 33rem;
+  }
+
+  .bonus {
+    top: 14rem;
   }
 
   .logo {
