@@ -27,7 +27,7 @@ window.onclick = function hideTheDropdown(event) {
   }
 };
 
-function getImage(currentImage, b, c, d, e, f, g, h, option, animation, position) {
+function getImage(currentImage, b, c, d, e, f, g, h, i, option, animation, position) {
   function showImage(image) {
     document.querySelector(currentImage).classList.add('show');
     document.querySelector(b).classList.remove('show');
@@ -37,6 +37,7 @@ function getImage(currentImage, b, c, d, e, f, g, h, option, animation, position
     document.querySelector(f).classList.remove('show');
     document.querySelector(g).classList.remove('show');
     document.querySelector(h).classList.remove('show');
+    document.querySelector(i).classList.remove('show');
     image.preventDefault();
     document.querySelector(currentImage).classList.add(animation);
     document.querySelector(currentImage).classList.add(position);
@@ -50,6 +51,7 @@ getImage(
   '.queue',
   '.auditor',
   '.engineer',
+  '.spartan',
   '.bonus',
   '.logo',
   'select-pusher',
@@ -63,6 +65,7 @@ getImage(
   '.queue',
   '.auditor',
   '.engineer',
+  '.spartan',
   '.bonus',
   '.logo',
   'select-captain',
@@ -76,6 +79,7 @@ getImage(
   '.queue',
   '.auditor',
   '.engineer',
+  '.spartan',
   '.bonus',
   '.logo',
   'select-keeper',
@@ -89,6 +93,7 @@ getImage(
   '.pusher',
   '.auditor',
   '.engineer',
+  '.spartan',
   '.bonus',
   '.logo',
   'select-queue',
@@ -102,6 +107,7 @@ getImage(
   '.pusher',
   '.queue',
   '.engineer',
+  '.spartan',
   '.bonus',
   '.logo',
   'select-auditor',
@@ -115,9 +121,25 @@ getImage(
   '.pusher',
   '.queue',
   '.auditor',
+  '.spartan',
   '.bonus',
   '.logo',
   'select-engineer',
+  'zoomInDown',
+  'position'
+);
+
+getImage(
+  '.spartan',
+  '.keeper',
+  '.captain',
+  '.pusher',
+  '.queue',
+  '.auditor',
+  '.engineer',
+  '.bonus',
+  '.logo',
+  'select-spartan',
   'zoomInDown',
   'position'
 );
@@ -130,6 +152,7 @@ getImage(
   '.queue',
   '.auditor',
   '.engineer',
+  '.spartan',
   '.logo',
   'select-bonus',
   'rotateIn',
@@ -143,6 +166,7 @@ getImage(
   '.queue',
   '.auditor',
   '.engineer',
+  '.spartan',
   '.bonus',
   'end',
   'fade-in'
@@ -155,6 +179,7 @@ getImage(
   '.queue',
   '.auditor',
   '.engineer',
+  '.spartan',
   '.bonus',
   'end',
   'fade-in'
