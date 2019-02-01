@@ -153,6 +153,7 @@ body {
 .dropdown {
   position: relative;
   font-weight: 200;
+  margin-top: 2rem;
 }
 
 .dropbtn {
@@ -200,7 +201,7 @@ i {
   z-index: 1;
   border: solid 1px #aaaab3;
   border-radius: 1.5rem;
-  width: 27rem;
+  width: 21rem;
   font-size: 1.5rem;
   font-weight: 200;
   margin: auto;
@@ -211,7 +212,7 @@ i {
   padding: 1rem 1.75rem 1rem 0.875rem;
   text-decoration: none;
   display: block;
-  width: 27rem;
+  width: 21rem;
   margin: auto;
 }
 
@@ -633,6 +634,10 @@ img {
     position: absolute;
     top: 8rem;
     left: 12rem;
+    width: 27rem;
+  }
+
+  .dropdown a {
     width: 27rem;
   }
 
